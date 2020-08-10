@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>nestionglsit.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+nestionglsit.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># #嵌套列表</span>
+<span class="s0"># # [[],[],[],[]]</span>
+<span class="s0"># str = &quot;zhangsan,24,6000&quot;</span>
+<span class="s0"># list = str.split(&quot;,&quot;)</span>
+<span class="s0"># print(list)</span>
+<span class="s0">#</span>
+
+
+<span class="s1">aml = []</span>
+<span class="s2">while </span><span class="s3">1</span><span class="s1">:</span>
+    <span class="s1">message = input(</span><span class="s4">&quot;输入员工信息&quot;</span><span class="s1">)</span>
+    <span class="s2">if </span><span class="s1">message == </span><span class="s4">&quot;&quot;</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s4">&quot;程序结束&quot;</span><span class="s1">)</span>
+        <span class="s2">break</span>
+    <span class="s1">messagelist = message.split(</span><span class="s4">&quot;,&quot;</span><span class="s1">)</span>
+    <span class="s2">if </span><span class="s1">len(messagelist) != </span><span class="s3">3</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s4">&quot;格式输入错误请重新输入&quot;</span><span class="s1">)</span>
+        <span class="s2">continue</span>
+    <span class="s1">aml.append(messagelist)</span>
+    <span class="s2">for </span><span class="s1">mes </span><span class="s2">in </span><span class="s1">aml:</span>
+        <span class="s1">print(</span><span class="s4">&quot;姓名{n}，年龄{a}，薪资{s}&quot;</span><span class="s1">.format(n=mes[</span><span class="s3">0</span><span class="s1">]</span><span class="s2">, </span><span class="s1">a=mes[</span><span class="s3">1</span><span class="s1">]</span><span class="s2">, </span><span class="s1">s=mes[</span><span class="s3">2</span><span class="s1">]))</span>
+</pre>
+</body>
+</html>
